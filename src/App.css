@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8A2BE2;
+  height: 50px;
+  padding: 27px;
+  color: white;
+  position: center;
+}
+
+.App-title {
+  margin-left: 250px;
+  font-size: 1.5em;
+}
+
+span{
+  margin-left: 200px;
+
+}
+
+
+
+/*Small device screens*/
+@media only screen and (max-width: 600px){
+	.App-title{
+		margin-left: 30px;
+		margin-top: -10px;
+		font-size: 1.5em;
+	}
+
+	span{
+		font-size: .5em;
+		margin-left: 40px;
+		margin-top: -5px;
+	}
+}
+/*Medium device screens*/
+@media only screen and (min-width: 768px){
+	.App-title{
+		margin-left: 100px;
+		margin-top: 0.5px;
+		font-size: 1.9em;
+	}
+
+	span{
+		font-size: 1.3em;
+		margin-left: 40px;
+		margin-top: 0.2px;
+	}
+}
+
+/*Large device screens*/
+@media only screen and (min-width: 1000px){
+	.App-title{
+		margin-left: 300px;
+	}
+
+	span{
+		margin-left: 250px;
+	}
+}

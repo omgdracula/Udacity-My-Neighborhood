@@ -1,0 +1,110 @@
+/*have a toggle for both the map and search containers
+that will allow the map to take up 100% space or 75% and 
+all the search bar to appear*/
+
+#map-container{
+  width: 115%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+#search-container{
+  display: flex;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: grey;
+}
+
+#map{
+  height: 100%;
+}
+
+#search-button{
+	position: absolute;
+	right: 0px;
+  color: white;
+}
+
+#map-container-expand{
+  width: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+#search-container-shrink{
+  display: flex;
+  width: 5%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: grey;
+}
+
+li{
+  padding: 4px;
+}
+
+.infoWindow{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Small device screens*/
+@media only screen and (min-width: 360px){
+  #search-container{
+   width: 50%;
+   height: 43%;
+  }
+  #search-container-shrink{
+    width: 10.2%;
+    height: 43%;
+  }
+  li{
+    font-size: 0.8em;
+  }
+  #search-button{
+  right: -6px;
+ }
+ .infoWindow{
+  width: 200px;
+  height: 330px;
+ }
+}
+
+@media only screen and (min-width: 768px){
+#search-container{
+   width: 35%;
+   height: 30%;
+  }
+ #search-container-shrink{
+    width: 11%;
+    height: 30%;
+  }
+ #search-button{
+  font-size: 1em;
+ }
+ li{
+  font-size: 1.2em;
+ }
+}
+
+@media only screen and (min-width: 800px){
+ #search-container{
+   width: 35%;
+   height: 40%;
+  }
+ #search-container-shrink{
+    width: 11%;
+    height: 40%;
+  }
+ #search-button{
+  font-size: 1em;
+ }
+ li{
+  font-size: 1.2em;
+ }
+}
+
