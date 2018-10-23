@@ -73,7 +73,7 @@ state = {
           // console.log(description)
           self.state.infoWindow.setContent('<div class="infoWindow"><div><b>' + marker.title + '</b></div>' + '\n'
           + '<div class="address">' + marker.address + '</div>' + '\n'
-          + '<img src=' + image +'>' + '\n'
+          + '<img src=' + image +' alt=' + marker.title + '>' + '\n'
           + 'Description: ' + description + "</div>")
         })
       }).catch(function(err){

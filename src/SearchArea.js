@@ -44,8 +44,10 @@ class SearchArea extends Component{
 		return(
 		<div>
 		   	<div className="search-contents">
+			   	<label class="sr-only" for="locations"><span class="sr-only">Search Locations</span></label>
 			   	<input
-		        type="text"
+				type="text"
+				name="locations"
 		        placeholder="Search Locations"
 		        className={toggleSearchbar}
 		        onChange={(event) => this.updateQuery(event.target.value)}
